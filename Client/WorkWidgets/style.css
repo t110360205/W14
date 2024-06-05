@@ -1,0 +1,114 @@
+/* QWidget[name="add_stu_widget"]{
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-image: url('Client/WorkWidgets/image/background.jpg');
+} */
+QTabWidget::pane{
+    border: none;
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-image: url(Client/WorkWidgets/image/background-1.jpg);
+    background-size: cover;
+}
+
+/* Label StyleSheet   ------------------------------*/
+QLabel{
+    background: transparent;
+
+}
+
+
+/* LineEdit StyleSheet ------------------------------*/
+QLineEdit {
+    padding: 5px 15px;
+    border: 2px solid #e0e4e7;
+    border-radius: 8px;
+} 
+
+QLineEdit:focus {
+    border: 2px solid #c0e3ff;
+}
+
+/* Push Buttn StyleSheet ----------------------------*/
+QPushButton{
+    border-radius : 10px; border : 2.5px solid black; 
+}
+
+/* List Widget StyleSheet ---------------------------*/
+QListWidget {
+    font-family: "system-ui";
+    font-size: 18px;
+    font-weight: bold; 
+    color: #000000;
+    background-color: transparent;
+}
+
+QListWidget::item {
+    height: 50px;
+}
+
+QListWidget::item:selected {
+    background-color: #74b2e7;
+    border: 0px;
+}
+
+/* Scroll StyleSheet  ------------------------------*/
+QScrollArea {
+    background: transparent;
+
+}
+
+/* Combobox StyleSheet -----------------------------*/
+QComboBox {
+    color:#666666;
+    font-size: 18px;
+    padding: 1px 15px 1px 15px;
+    border:1px solid rgba(228, 228, 228, 1);
+    border-radius : 5px 5px 0px 0px;
+}
+
+QComboBox:on { /* shift the text when the popup opens */
+    padding-top: 3px;
+    padding-left: 4px;
+}
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border: none;
+}
+
+QComboBox::down-arrow {
+    image: url('Client/WorkWidgets/image/down arrow.jfif');
+    width: 30px;
+    height: 30px;
+}
+
+QComboBox::down-arrow:on { /* shift the arrow when popup is open */
+    top: 1px;
+    left: 1px;
+}
+QComboBox QAbstractItemView{
+    background: rgba(255, 255, 255, 1);
+    border:1px solid rgba(228,228, 228, 1);
+    border-radius: 0px 0px 5px 5px;
+    font-size: 14px;
+    outline: 0px;   
+}
+
+QComboBox QAbstractItemView::item{
+    height : 36px;
+    color:#666666;
+    padding-left:9px;
+    background-color: #FFFFFF;
+}
+                           
+QComboBox QAbstractItemView::item:hover{
+background-color:#409CE1;
+color:#ffffff;
+}
+
+QComboBox QAbstractItemView::item:selected{
+    background-color:#409CE1;
+    color:#ffffff;
+}
